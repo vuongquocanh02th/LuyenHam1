@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tang gia tri so</title>
+</head>
+<body onload="display()">
+<p id="ketqua"></p>
+</body>
+</html>
+
+<script>
+  function tangGiaTri(num){
+    return num+1;
+  }
+  function display(){
+    let num=5; //gan gia tri bat ky cho doi so
+    let result=tangGiaTri(num);
+    document.getElementById('ketqua')
+            .innerHTML='Ket qua '+result;
+  }
+</script>

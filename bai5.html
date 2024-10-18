@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let ngoisao = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+  let chomsao = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+  function timChomSao(tensao){
+      let index = ngoisao.indexOf(tensao);
+      if ( index !== -1 ){
+          return chomsao[index];
+      }else {
+          return 'Khong tim thay sao';
+      }
+  }
+  let input = prompt('Nhap ten ngoi sao:');
+  let result = timChomSao(input);
+  alert(result);
+</script>
